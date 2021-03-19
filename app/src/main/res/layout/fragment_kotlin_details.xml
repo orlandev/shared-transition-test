@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/ivKotlin"
+            android:layout_width="match_parent"
+            android:layout_height="374dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_kotlin_icon"
+            android:transitionName="image_kotlin_big"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.018"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/kotlinText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:text="Kotlin"
+            android:textSize="22sp"
+            android:transitionName="text_title_big"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivKotlin" />
+
+        <TextView
+            android:id="@+id/kotlinDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="8dp"
+            android:text="Kotlin es un lenguaje de programación de tipado estático que corre sobre la máquina virtual de Java y que también puede ser compilado a código fuente de JavaScript. Es desarrollado principalmente por JetBrains en sus oficinas de San Petersburgo (Rusia). El nombre proviene de la isla de Kotlin, situada cerca de San Petersburgo.\n2​
+Kotlin fue nombrado lenguaje del mes por la revista Dr. Dobb' Journal en su edición de enero de 2016.\n3​ Aunque no tiene una sintaxis compatible con Java, Kotlin está diseñado para interoperar con código Java y es dependiente del código Java de su biblioteca de clases, tal como pueda ser el entorno de colecciones de Java"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/kotlinText"
+            app:layout_constraintTop_toBottomOf="@+id/kotlinText" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

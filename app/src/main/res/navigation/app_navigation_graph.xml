@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/app_navigation_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.splashscreen.sharedtransitiontest.MainFragment"
+        android:label="MainFragment" >
+        <action
+            android:id="@+id/action_mainFragment_to_kotlinDetailsFragment"
+            app:destination="@id/kotlinDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/kotlinDetailsFragment"
+        android:name="com.splashscreen.sharedtransitiontest.KotlinDetailsFragment"
+        android:label="KotlinDetailsFragment" />
+</navigation>
